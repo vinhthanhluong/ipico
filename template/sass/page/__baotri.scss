@@ -1,0 +1,43 @@
+
+.baotri{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 15px 0;
+    .icon-logo{
+        @include max-media($bk-d-1200){
+            img{
+                margin: auto;
+            }
+        }
+    }
+    .wrapper-content{
+        text-align: center;
+        margin-top: 50px;
+        @include max-media(1200px){
+            margin-top: 25px;
+        }
+        .meta-title{
+            color: $main-cl;
+        }
+        .txt-title{
+            color: $main-cl;
+            margin-bottom: 30px;
+            @include lh(63,50);
+            @include max-media($bk-d-992){
+                margin-bottom: 15px;
+            }
+            @include max-media($bk-576){
+                margin-bottom: 10px;
+            }
+        }
+        .txt-content{
+            @include fz-20;
+        }
+        .f-bold{
+            color: $main-cl;
+        }
+    }
+}

@@ -1,0 +1,282 @@
+.main-cl {
+    color: $main-cl;
+}
+
+.f-medium {
+    font-weight: 500;
+}
+
+.f-black {
+    font-weight: 900;
+}
+
+.sec-90 {
+    padding: 90px 0;
+
+    &.--pt-0 {
+        padding-top: 0;
+    }
+
+    &.--pb-0 {
+        padding-bottom: 0;
+    }
+
+    @include max-media($bk-d-1200){
+        padding: 60px 0;
+    }
+    @include max-media($bk-d-768){
+        padding: 40px 0;
+    }
+}
+
+.bd-lr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before,
+    &::after {
+        content: '';
+        width: calc((100% - 180px) / 2);
+        height: 1px;
+        background-color: $main-cl;
+        display: inline-block;
+    }
+
+    &::before {
+        content: '';
+        margin-right: 10px;
+
+    }
+
+    &::after {
+        content: '';
+        margin-left: 10px;
+    }
+}
+
+.over-hidden{
+    overflow: hidden;
+}
+
+
+.main-content {
+    position: relative;
+    // overflow: hidden;
+}
+
+.main-content-landing {
+    position: relative;
+    // overflow: hidden;
+}
+
+.box-fx {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    height: 100%;
+    z-index: 90;
+    transition: all .3s ease;
+    @include max-media($bk-1900) {
+        left: 0;
+    }
+    @include max-media($bk-1900) {
+        transform: translateX(-100%);
+    }
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    .box-inner {
+        position: sticky;
+        top: 100px;
+        left: 0;
+        background-color: $bg-w-cl;
+        border: 1px solid rgba($color: $b-cl, $alpha: 0.1);
+        box-shadow: 10px 10px 30px rgba($color: $b-cl, $alpha: 0.16);
+        width: 240px;
+        transition: all .3s ease;
+        @include max-media($bk-1900) {
+            border-left: 0;
+        }
+       
+    }
+
+    .box-fx-title {
+        display: none;
+
+        @include max-media($bk-1900) {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: $w-cl;
+            border: 1px solid rgba($color: $b-cl, $alpha: 0.1);
+            border-radius: 0 6px 6px 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba($color: $b-cl, $alpha: 0.16);
+
+            @include max-media($bk-d-992) {
+                width: 47px;
+                height: 47px;
+            }
+        }
+
+        .fa {
+            color: $main-cl;
+            font-size: 25px;
+        }
+
+    }
+
+    .box-list {
+
+        .box-item {
+            &:not(:first-child) {
+                border-top: 1px solid rgba($color: $b-cl, $alpha: 0.1);
+            }
+
+            &.label {
+                color: $w-cl;
+                font-weight: bold;
+                background-color: $main-cl;
+
+                a {
+                    &:hover {
+                        color: $w-cl;
+                    }
+                }
+            }
+
+            &.drop {
+                position: relative;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    i {
+                        transition: all .3s ease;
+                        font-size: 20px;
+                        transform: rotate(-90deg);
+                        &.--show{
+                            transform: rotate(0deg);
+                        }
+
+                        @include min-media($bk-1200) {
+                            pointer-events: none;
+                        }
+                    }
+                }
+
+                &:hover {
+                   
+
+                    @include min-media($bk-1200) {
+                        .sub {
+                            @include visible;
+                        }
+                    }
+                }
+            }
+
+            .sub {
+                position: absolute;
+                top: 0;
+                left: calc(100% + 10px);
+                background-color: $w-cl;
+                width: 100%;
+                border: 1px solid rgba($color: $b-cl, $alpha: 0.1);
+                box-shadow: 10px 10px 30px rgba($color: $b-cl, $alpha: 0.16);
+
+                @include min-media($bk-1200) {
+                    @include hidden;
+                    transition: all .3s ease;
+                }
+
+                @include max-media($bk-d-1200) {
+                    position: static;
+                    display: none;
+
+                    a {
+                        padding: 13px 20px;
+                    }
+                }
+            }
+
+            &.active {
+                >a {
+                    color: $main-cl;
+                    font-weight: bold;
+                }
+            }
+
+            a {
+                padding: 13px 15px;
+                @include fz-16;
+                display: block;
+                transition: all .3s ease;
+
+                @include max-media($bk-1900) {}
+
+                &:hover {
+                    color: $main-cl;
+                    font-weight: bold;
+                }
+            }
+        }
+
+      
+    }
+
+    &-intro {
+        left: 145px;
+
+        @include max-media($bk-1900) {
+            left: 0;
+        }
+
+        .box-inner {
+            width: 190px;
+        }
+
+        .box-list {
+            .box-item {
+                a {
+                    padding: 14px 20px;
+                    color: $main-cl;
+
+                    &.active {
+                        color: $w-cl;
+                        font-weight: bold;
+                        background-color: $main-cl;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gg-map {
+    width: 100%;
+    background-image: url('../img/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    iframe {
+        width: 100%;
+        height: 580px;
+        @include max-media($bk-d-992){
+            height: 400px;
+        }
+        @include max-media($bk-d-768){
+            height: 300px;
+        }
+    }
+}
+

@@ -1,0 +1,331 @@
+.chance-job {
+    @include max-media($bk-d-768){
+        padding: 15px  0 0;
+    }
+    .columns {
+        @include max-media($bk-d-768) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .column {
+        width: calc(100% / 2);
+
+        @include max-media($bk-d-768) {
+            width: 100%;
+        }
+    }
+
+    .job-title {
+        margin-bottom: 15px;
+        @include lh(32, 24);
+
+        @include max-media($bk-d-1200) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .job-p {
+        @include lh(26, 16);
+        margin-bottom: 7px;
+    }
+
+    .job-link {
+        @include max-media($bk-400) {
+            max-width: 100%;
+        }
+    }
+
+    .job-img {
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.nominee {
+    padding: 100px 0 90px;
+    @include max-media($bk-d-1200){
+        padding: 60px 0;
+    }
+    @include max-media($bk-d-768){
+        padding: 40px 0;
+    }
+
+    .nominee-top {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include max-media($bk-d-1200) {
+            margin-bottom: 15px;
+        }
+
+        @include max-media($bk-d-768) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nominee-action {
+            display: flex;
+            align-items: center;
+
+            @include max-media($bk-d-768) {
+                margin-top: 10px;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            @include max-media($bk-540) {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+        }
+    }
+
+    .nominee-action {
+        .nominee-group {
+            display: flex;
+            align-items: center;
+
+            @include max-media($bk-540) {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            &:not(:first-child) {
+                margin-left: 30px;
+
+                @include max-media($bk-d-992) {
+                    margin-left: 15px;
+                }
+
+                @include max-media($bk-576) {
+                    margin-left: 0px;
+                }
+
+                @include max-media($bk-540) {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .label {
+            &:not(:first-child) {
+                margin-left: 30px;
+
+                @include max-media($bk-d-992) {
+                    margin-left: 15px;
+                }
+            }
+
+            .nominee-f {
+                display: none;
+
+                &:checked+p {
+                    &::before {
+                        border-color: $main-cl;
+                        background-color: $main-cl;
+                    }
+                }
+            }
+
+            p {
+                @include lh(24, 18);
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    border: 1px solid #707070;
+                    border-radius: 100%;
+                    display: inline-block;
+                    transition: all .3s ease;
+                    margin-right: 10px;
+
+                    @include max-media($bk-d-992) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .label-sel {
+            margin-right: 10px;
+        }
+
+        .nominee-select {
+            background-color: $main-cl;
+            color: $w-cl;
+            outline: none;
+            border: none;
+            padding: 10px 15px;
+            line-height: 20px;
+            width: 160px;
+            background-image: url('../img/arrow-down-white.svg');
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            cursor: pointer;
+
+            @include max-media($bk-d-992) {
+                width: 154px;
+            }
+
+            @include max-media($bk-d-768) {
+                width: 200px;
+            }
+        }
+    }
+
+
+    .nominee-title {
+        @include lh(32, 24);
+    }
+
+    .nominee-tab {
+        display: table;
+        width: 100%;
+
+        thead {
+            td {
+                width: calc(100% / 12 * 2);
+
+                &.w-4 {
+                    width: calc(100% / 12 * 5);
+                }
+
+                &.w-3 {
+                    width: calc(100% / 12 * 3);
+                }
+
+                p {
+                    @include fz-20;
+                    font-weight: bold;
+                    padding: 13px 10px 13px 0;
+                }
+            }
+
+            @include max-media($bk-d-768) {
+                display: none;
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: rgba($color: $g-5555-cl, $alpha: 0.1);
+                }
+            }
+
+            td {
+                .td-text {
+                    @include fz-16;
+                    padding: 20px 20px 20px 0;
+                    transition: all .3s ease;
+                    display: inline-block;
+
+                    @include max-media($bk-d-768) {
+                        padding: 5px 0 0;
+                    }
+                }
+
+                a {
+                    &:hover {
+                        color: $main-cl;
+                        font-weight: bold;
+                    }
+                }
+
+                @include max-media($bk-d-768) {
+                    position: relative;
+
+                    &:first-child {
+                        padding-bottom: 0;
+                    }
+
+                    &::before {
+                        content: "";
+                        font-weight: bold;
+                        @include fz-20;
+                    }
+                }
+
+
+
+                &:nth-of-type(1) {
+                    @include max-media($bk-d-768) {
+                        display: block;
+                        align-items: center;
+                        width: 100%;
+                        padding: 15px;
+
+                        &::before {
+                            content: 'Vị trí tuyển dụng:';
+                            font-weight: bold;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    @include max-media($bk-d-768) {
+                        display: inline-block;
+                        padding: 0 15px 15px;
+
+                        &::before {
+                            content: 'Nơi làm việc:';
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    @include max-media($bk-d-768) {
+                        display: inline-block;
+                        padding: 0 15px 15px;
+
+                        &::before {
+                            content: 'Số lượng:';
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    @include max-media($bk-d-768) {
+                        display: inline-block;
+                        padding: 0 15px 15px;
+
+                        &::before {
+                            content: 'Ngày hết hạn:';
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .pagination {
+        @include min-media($bk-768){
+            text-align: left;
+        }
+
+        ul {
+            li {
+                text-align: center;
+            }
+        }
+    }
+
+}

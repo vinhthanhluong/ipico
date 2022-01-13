@@ -1,0 +1,105 @@
+.contact-recruit{
+    padding: 0 0 90px;
+    @include max-media($bk-d-1200){
+        padding: 5px 0 60px;
+    }
+    @include max-media($bk-d-768){
+        padding: 15px 0 40px;
+    }
+    .column{
+        width: calc(100% / 12 * 6);
+        @include max-media($bk-d-768){
+            width: 100%;
+        }
+    }
+    .recruit-title{
+        margin-bottom: 15px;
+        @include lh(32,24);
+        @include max-media($bk-d-1200){
+            margin-bottom: 10px;
+        }
+    }
+    .mona-content{
+        p{
+            &:first-child{
+                margin-top: 0;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        img{
+            margin: 25px 0;
+            @include max-media($bk-d-992){
+                margin: 15px 0;
+            }
+        }
+    }
+
+    .recruit-tt{
+        margin-bottom: 5px;
+    }
+
+    .recruit-content{
+        padding-top: 20px;
+        border-top: 1px solid rgba($color: $b-cl, $alpha: 0.1);
+        @include  max-media($bk-d-768){
+            padding-top: 10px;
+        }
+    }
+
+    .recruit-box{
+        &:not(:first-child){
+            margin-top: 18px;
+            @include  max-media($bk-d-768){
+                margin-top: 10px;
+            }
+        }
+        .recruit-link{
+            padding-left: 30px;
+            position: relative;
+            display: inline-block;
+            transition: all .3s ease;
+            @include fz-16;
+
+            &:hover{
+                color:$main-cl;
+            }
+            span{
+                font-weight: bold;
+                color: $main-cl;
+            }
+            &::before{
+                content: "";
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                top: 0px;
+                left: 0;
+            }
+
+            &.rc-address{
+                &::before{
+                    content: "";
+                    background-image: url('../img/icon-home-main.svg');
+                }
+            }
+            &.rc-email{
+                &::before{
+                    content: "";
+                    background-image: url('../img/icon-email.svg');
+                }
+            }
+            &.rc-phone{
+                &::before{
+                    content: "";
+                    background-image: url('../img/icon-phone.svg');
+                }
+            }
+        }
+    }
+
+}

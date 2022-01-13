@@ -1,0 +1,107 @@
+.link-w-100{
+    margin-top: 25px;
+    color: $main-cl;
+    position: relative;
+    display: inline-block;
+    &:hover{
+        &::after{
+            width: 0;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background: $main-cl;
+        width: 100%;
+        height: 1px;
+        transition: .3s ease;
+    }
+}
+
+.sec-tuyendung{
+    padding: 10px 0 90px;
+    @include max-media($bk-d-1200){
+        padding: 10px 0 60px;
+    }
+    @include max-media($bk-d-768){
+        padding: 15px 0 40px;
+    }
+    .arti-tuyendung{
+        .columns{
+            margin: 0;
+            align-items: center;
+            @include max-media($bk-d-768){
+                flex-direction: column-reverse;
+            }
+        }
+        .column{
+            width: 50%;
+            padding: 0;
+            @include max-media($bk-d-768){
+                width: 100%;
+            }
+        }
+        .wrapper-img{
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: auto;
+            }
+        }
+        .wrapper-content{
+            padding-right: 50px;
+            padding-left: 0;
+            text-align: right;
+            @include max-media(992px){
+                padding: 15px 0;
+                padding-right: 15px;
+            }
+            @include max-media($bk-d-768){
+                text-align: left;
+                padding-right: 0;
+            }
+            .txt-title{
+                text-transform: uppercase;
+               color: $main-cl;
+            }
+            .txt-desc{
+                margin-top: 10px;
+                @include fz-16;
+                @include max-media($bk-d-768){
+                    margin-top: 5px;
+                }
+            }
+
+            .link-w-100{
+                margin-top: 10px;
+            }
+        }
+    }
+    .arti-tuyendung:nth-child(2n+2){
+        .columns{
+            flex-direction: row-reverse;
+            background: #F8F8F8;
+            @include max-media($bk-d-768){
+                flex-direction: column-reverse;
+                background: transparent;
+            }
+        }
+        .wrapper-content{
+            
+            text-align: left;
+            padding-left: 50px;
+            padding-right: 0;
+            @include max-media(992px){
+                padding: 15px 0;
+                padding-left: 15px;
+            }
+            @include max-media($bk-d-768){
+                padding-left: 0;
+            }
+   
+        }
+    }
+}

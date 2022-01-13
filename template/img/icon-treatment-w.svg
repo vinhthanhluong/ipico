@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_281" data-name="Rectangle 281" width="20" height="20" transform="translate(643 4014)" fill="#072974" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-treatment-w" transform="translate(-643 -4014)" clip-path="url(#clip-path)">
+    <g id="water-factory" transform="translate(643 4014)">
+      <path id="Path_178" data-name="Path 178" d="M17.617,6.484a2.935,2.935,0,0,0-2.344-2.871V1.758A1.76,1.76,0,0,0,13.516,0H6.484A1.76,1.76,0,0,0,4.727,1.758v.657A5.3,5.3,0,0,0,0,7.656V20H20V7.07H17.617Zm-1.172,0V7.07H12.93V6.484a1.758,1.758,0,0,1,3.516,0ZM6.484,1.172h7.031a.587.587,0,0,1,.586.586V3.614a2.935,2.935,0,0,0-2.344,2.871V7.07h-1.2A5.283,5.283,0,0,0,5.9,2.416V1.758a.587.587,0,0,1,.586-.586ZM4.727,5.9H5.9V7.07H4.727Zm0,2.344H5.9V9.414H4.727Zm0,2.344H5.9v1.172H4.727Zm0,2.344H5.9V14.1H4.727ZM5.9,3.6v1.13H4.727V3.6a4.2,4.2,0,0,1,.586-.041A4.118,4.118,0,0,1,5.9,3.6ZM4.727,15.273H5.9v1.211H4.727ZM7.07,3.951A4.107,4.107,0,0,1,9.414,7.656v8.828H7.07Zm-5.9,3.705A4.1,4.1,0,0,1,3.555,3.943V16.484H1.172Zm0,11.172V17.656H18.828v1.172Zm14.1-2.344H14.1V12.93h1.172Zm3.555,0H16.445V11.758H12.93v4.727H10.586V8.242h8.242Z" fill="#072974"/>
+      <path id="Path_179" data-name="Path 179" d="M11.758,9.414H12.93v1.172H11.758Z" fill="#072974"/>
+      <path id="Path_180" data-name="Path 180" d="M14.1,9.414h1.172v1.172H14.1Z" fill="#072974"/>
+      <path id="Path_181" data-name="Path 181" d="M16.445,9.414h1.172v1.172H16.445Z" fill="#072974"/>
+    </g>
+  </g>
+</svg>

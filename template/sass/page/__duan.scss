@@ -1,0 +1,56 @@
+.sec-duan{
+    padding: 10px 0 90px;
+    @include max-media($bk-d-1200){
+        padding: 10px 0 60px;
+    }
+    @include max-media($bk-d-768){
+        padding: 15px 0 40px;
+    }
+    .txt-title{
+        color: $main-cl;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 35px;
+        @include max-media(1200px){
+            margin-bottom: 15px;
+        }
+    }
+    .slide-duan{
+        position: relative;
+        margin-bottom: -30px;
+        .swiper-container{
+            padding-bottom: 30px;
+        }
+        .swiper-button-prev{
+            left: -25px;
+            @include max-media(1200px){
+                left: -10px;
+            }
+        }
+        .swiper-button-next{
+            right: -25px;
+            @include max-media(1200px){
+                right: -10px;
+            }
+        }
+    }
+    .slide-thuongmai{
+        position: relative;
+        margin-bottom: -30px;
+        .swiper-container{
+            padding-bottom: 30px;
+        }
+        .swiper-button-prev{
+            left: -25px;
+            @include max-media(1200px){
+                left: -10px;
+            }
+        }
+        .swiper-button-next{
+            right: -25px;
+            @include max-media(1200px){
+                right: -10px;
+            }
+        }
+    }
+}

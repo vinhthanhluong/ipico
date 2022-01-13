@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_86" data-name="Rectangle 86" width="20" height="20" transform="translate(1275 4190)" fill="#072974" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-home-main" transform="translate(-1275 -4190)" clip-path="url(#clip-path)">
+    <g id="_01-home" data-name="01-home" transform="translate(1277.222 4190)">
+      <g id="glyph" transform="translate(0)">
+        <path id="Path_79" data-name="Path 79" d="M10.873.206A7.787,7.787,0,0,0,3.1,7.984c0,2.083,1.262,4.759,3.751,7.952a42.294,42.294,0,0,0,3.7,4.139.476.476,0,0,0,.658,0,42.294,42.294,0,0,0,3.7-4.139c2.489-3.193,3.751-5.868,3.751-7.952A7.787,7.787,0,0,0,10.873.206Zm0,13.333a5.556,5.556,0,1,1,5.556-5.556A5.562,5.562,0,0,1,10.873,13.54Z" transform="translate(-3.095 -0.206)" fill="#072974"/>
+        <path id="Path_80" data-name="Path 80" d="M15.828,8.457,12.336,5.283a.476.476,0,0,0-.641,0L8.2,8.457a.476.476,0,0,0-.088.6.489.489,0,0,0,.423.232H9V12.3a.476.476,0,0,0,.476.476h1.111a.476.476,0,0,0,.476-.476V10.556a.476.476,0,0,1,.476-.476h.952a.476.476,0,0,1,.476.476V12.3a.476.476,0,0,0,.476.476h1.111a.476.476,0,0,0,.476-.476V9.286h.462a.489.489,0,0,0,.423-.232A.476.476,0,0,0,15.828,8.457Z" transform="translate(-4.238 -1.349)" fill="#072974"/>
+      </g>
+    </g>
+  </g>
+</svg>

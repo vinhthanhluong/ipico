@@ -1,0 +1,139 @@
+.document-law {
+    padding: 10px 0 90px;
+    @include max-media($bk-d-1200){
+        padding: 10px 0 60px;
+    }
+    @include max-media($bk-d-768){
+        padding: 15px 0 40px;
+    }
+    .column {
+        width: calc(100% / 12 * 4);
+        @include max-media($bk-768){
+            width: calc(100% / 12 * 6);
+        }
+        @include max-media($bk-576){
+            width: 100%;
+        }
+    }
+
+    .law-txt {
+        width: calc(100% / 12 * 8);
+        margin: 0 auto;
+        @include max-media($bk-d-768){
+            width: 100%;
+        }
+    }
+
+    .law-title {
+        margin-bottom: 15px;
+        text-align: center;
+
+        @include max-media($bk-d-1200) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .law-f {
+        position: relative;
+
+        .f-control {
+            border-color: rgba($color: $b-cl, $alpha: 0.1);
+            padding: 9px 125px 9px 6px;
+            height: auto;
+            line-height: 20px;
+            border-radius: 0;
+            transition: all .3s ease;
+
+            &:hover,
+            &:focus {
+                border-color: $main-cl;
+            }
+
+            &::placeholder {
+                color: #C0C0C0;
+            }
+        }
+
+        .f-submit {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: $w-cl;
+            background-color: $main-cl;
+            line-height: 20px;
+            padding: 9px 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+            border: 1px solid $main-cl;
+
+            &:hover {
+                color: $main-cl;
+                background-color: $w-cl;
+            }
+        }
+    }
+    .law-content{
+        margin-top: 35px;
+        @include max-media($bk-d-1200){
+            margin-top: 20px;
+        }
+    }
+
+    .law-inner {
+        &:hover{
+            .law-link{
+                a{
+                    background-color:  $main-cl;
+                }
+            }
+
+            .law-t{
+                font-weight: bold;
+                color: $main-cl;
+            }
+        }
+
+        .law-img {
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .law-ig{
+            position: relative;
+            border: 1px solid rgba($color: $b-cl, $alpha: 0.1);
+        }
+
+        .law-link {
+            position: absolute;
+            bottom: 0;
+            left: 0%;
+            width: 100%;
+            a {
+                @include lh(24,18);
+                padding: 8px 0;
+                display: block;
+                text-align: center;
+                background-color: #CECECE;
+                color: $w-cl;
+                transition: all .3s ease;
+            }
+        }
+
+        .law-t{
+            transition: all .2s ease;
+            text-align: center;
+            margin-top: 15px;
+            @include lh(30,20);
+            @include max-media($bk-d-1200){
+                margin-top: 10px;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,71 @@
+//primary color
+$b-cl: #000000;
+$w-cl: #fff;
+$g-cl: #898989;
+$dark-cl: #333;
+$light-cl: #fff;
+
+
+
+//color-text
+$t-b-cl: $b-cl;
+$t-w-cl: $w-cl;
+$t-g-cl: $g-cl;
+
+
+//color-background
+$bg-b-cl: $b-cl;
+$bg-w-cl: $w-cl;
+$bg-g-cl: $g-cl;
+
+
+//color design
+$main-cl: #072974;
+$border-cl: #e1e1e1;
+$g-E5E5-cl:#E5E5E5;
+$g-CECE-cl:#CECECE;
+$main-cl-2:#0050FF;
+$main-cl-3:#0039B7;
+$g-5555-cl:#555555;
+$g-F6F6-cl:#F6F6F6;
+$e1:#00A8DF;
+$e2: #2C3854;
+$e3:#FF5D6C;
+$e4: #019F91;
+
+
+//font-famili , font-size
+$fz-base: 10px;
+$font-body: 'SF Pro Display', sans-serif;
+$fz-body: 14px;
+$lh-body: 1.4;
+$cl-body: #000000;
+
+
+//break point
+$bk-1900: 1900px;
+$bk-1440: 1440px;
+$bk-1200: 1200px;
+$bk-1024: 1024px;
+$bk-992: 992px;
+$bk-768: 768px;
+$bk-576: 576px;
+$bk-540: 540px;
+$bk-500: 500px;
+$bk-450: 450px;
+$bk-400: 400px;
+//break point - 1
+$bk-d-1440: $bk-1440 - 1;
+$bk-d-1200: $bk-1200 - 1;
+$bk-d-1024: $bk-1024 - 1;
+$bk-d-992: $bk-992 - 1;
+$bk-d-768: $bk-768 - 1;
+$bk-d-576: $bk-576 - 1;
+$bk-d-450: $bk-450 - 1;
+/*width*/
+$w-scroll: 0px;
+$max-width: 100%;
+$container-full-width: 1920px;
+$container-width: 1200px;
+$padding: 15px;
+

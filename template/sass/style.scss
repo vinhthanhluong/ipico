@@ -1,0 +1,71 @@
+@charset "utf-8";
+//Font Family
+@import url(../font/SFPro-Display/stylesheet.css);
+@import url(../font/Oswald/stylesheet.css);
+//Libraries
+@import url(../js/libs/aos/aos.css);
+@import url(../js/libs/swiper/swiper.min.css);
+@import url(../js/libs/popup/magnific-popup.css);
+@import url(../js/libs/lightgallery/lightgallery.css);
+@import url(../font/font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(../js/libs/wow/wow.css);
+
+// Core
+@import './core/_variable';
+@import './core/_mona';
+@import './core/_mixins';
+@import './core/_base';
+@import './core/_reset';
+@import './core/_animation';
+@import './core/_code';
+
+// Components
+@import './components/_header';
+@import './components/_footer';
+@import './components/_title';
+@import './components/_sec';
+@import './components/_spacing';
+@import './components/_button';
+@import './components/_overplay';
+@import './components/_tabs';
+@import './components/_customSwiper';
+@import './components/_search';
+@import './components/_banner';
+@import './components/_form-control';
+@import './components/_pagination';
+@import './components/_loading';
+@import './components/_popup-cart';
+@import './components/_lightgallery';
+@import './components/_popup';
+@import './components/_breadcrumb';
+// Page
+@import './page/_home';
+@import './page/_404';
+@import './page/_lienhe';
+@import './page/_gioithieu';
+@import './page/_batdongsan-nghiduong';
+@import './page/_duan';
+@import './page/_new-detail';
+@import './page/_new';
+@import './page/_hotro';
+@import './page/_dichvu-phaply';
+@import './page/_quytrinh-dautu';
+@import './page/_vanban-phapluat';
+@import './page/_lienhe-tuyendung';
+@import './page/_cohoi-nghenghiep';
+@import './page/_baotri';
+@import './page/_cayxanhcanhquan';
+@import './page/_list-dichvu';
+@import './page/_chitietduan';
+@import './page/_visao-chonipico';
+
+.wow {
+    animation-duration: 1s;
+
+    @include max-media($bk-d-768) {
+        visibility: visible !important;
+        -webkit-animation-name: none !important;
+        -o-animation-name: none !important;
+        animation-name: none !important;
+    }
+}
